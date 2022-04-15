@@ -1,0 +1,261 @@
+/* Theme Name: Restaurangguide
+Author: Dana Alhawari
+Author URL: www.iths.se
+Version: 1.0
+*/
+/*general*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(252 247 244);
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2{
+	text-align: center;
+	color: #f60;
+}
+h1{
+	margin: 10px;
+}
+a.title{
+	text-decoration: none;
+	color: #f60;
+}
+/*kategorier*/
+ul.post-categories{
+	padding: 0;
+}
+ul.post-categories li{
+	list-style: none;
+}
+ul.post-categories li a{
+	text-decoration: none;
+	color: #f60;
+	font-size:14px;
+	
+}
+
+/* Header */
+#header{
+	box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+	margin-bottom: 8%;
+	background-color:rgb(252, 250, 248);
+}
+#logo{
+   text-align: center;
+   height: 100px;
+}
+
+a.logo {
+    color: #f60;
+    font-size: 50px;
+    text-decoration: none;
+   line-height: 91px;
+
+}
+#nav {
+	height: 40px;
+    
+    
+}
+
+	#nav .menu {
+		margin: 0;
+		padding: 0 0 0 22%;
+	}
+
+		#nav .menu > li {
+			float: left;
+			line-height: 40px;
+			list-style: none;
+			margin-right: 10px;
+			padding: 0 7px;
+		}
+
+			#nav .menu > li.current-menu-item a{
+			color: #f60;
+			}
+
+			#nav .menu > li > a {
+				color: rgb(51, 46, 42);
+                text-decoration: none;
+			}
+			#nav .menu > li > a:hover{
+				color: #f60;
+			}
+
+		    /*Breadcrumb*/
+			#nav .menu > li+li:before{
+				content: "/\00a0";
+				padding: 4px;
+				color: #f60;
+			}
+				/*Dropdown*/
+			.sub-menu{
+				display: none;
+				position: absolute;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				right: 46%;
+			}
+			
+			.sub-menu li{
+				list-style:  none;
+				
+				
+			}
+			.sub-menu a{
+				float: none;
+				color: black;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+				padding:0 4px;
+			}
+			#menu-item-374:hover .sub-menu{
+				display: block;
+			}
+/* Front page */
+.flex-gallery-container {
+	display: flex;
+	justify-content: center;
+	
+	}
+	
+	.flex-gallery-container > div {
+	margin: 10px;
+	padding: 20px;		
+	}
+	.wp-block-gallery.is-cropped .blocks-gallery-item img {
+    width:300px ;
+	height: 400px;
+	}
+	/*ficapton*/
+	.blocks-gallery-item__caption >a{
+		color:white ;
+		font-size: 16px;
+		text-decoration: none;
+	}
+
+    /* Alla resturanger (blog)*/
+
+.flex-main-container{
+	background-color:rgb(252, 250, 248);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+}
+.flex-main-container > div {
+    display: flex;
+	margin: 10px;
+	padding: 20px;
+ 
+	}
+    .flex-article-container{
+		background-color: rgb(252 247 244);
+        width: 80%;
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+    }
+    .flex-article-container >img{
+        width: 40%;
+        padding: 20px;
+    }
+    .aside{
+		background-color: rgb(252 247 244);
+        width: 20%;
+        box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+	
+    }
+    .aside_info{
+        margin: 10px;
+	    padding: 20px;
+		line-height: 25px;
+    }
+    .article_info{
+        width: 60%;
+        margin: 10px;
+	    padding: 20px;
+		line-height: 25px;
+    }
+	/*single*/
+	.flex-article-container-single{
+		display: block;
+		width: 70%;
+	}
+	.single-img{
+		width: 80%;
+		height: 450px;
+		margin: auto;
+	}
+	.aside-single{
+		width: 30%;
+		box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+		background-color: rgb(252 247 244);
+		
+	}
+	.article_info-single{
+		text-align: left;
+		width: 80%;
+		margin-left: 12%;
+	}
+	/*om oss*/
+	.about-content{
+		width: 75%;
+		margin: auto;
+		padding: 15px 20px;
+		line-height: 50px;
+		background-color:rgb(252, 250, 248);
+		box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+	}
+	.about{
+		width: 40%;
+	
+		margin: 5% auto;
+	}
+	.wp-block-media-text{
+		display: flex;
+		justify-content: space-around;
+		background-color:rgb(252, 250, 248);
+		box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+	}
+	.wp-block-media-text__media >img{
+		width: 150px;
+		height: 150px;
+	}
+	/*Kontakta*/
+	#kontakta{
+		width: 60%;
+		margin: auto;
+		padding: 7px 21px;
+	}
+	#wsf-1-field-wrapper-15{
+		margin-left: 24%;
+	}
+	#wsf-1-field-15{
+		background-color: #f60;
+		border-color: #f60;
+		color:aliceblue;
+		width: 50%;
+		margin: auto;
+	}
+	/*Footer*/
+	footer{
+		text-align: center;
+		padding: 5px;
+		box-shadow: 0 2px 4px 0 rgb(186 186 186 / 50%);
+		margin-top: 2%;
+		background-color:rgb(252, 250, 248);
+		height: 50px;
+	}
+	footer >p{
+		padding: 3px;
+	}
+	/*social icon på post*/
+.article_info-single {
+	text-align: center;
+}
